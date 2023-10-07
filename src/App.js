@@ -5,9 +5,12 @@ import React, { useState, useEffect } from "react";
 import img from './image.jpg'
 import About from './components/About';
 import Gallery from './components/Gallery';
-import Features from './components/Features';
+
 import Footer from './components/Footer';
-import Cont from './components/Cont';
+import Our2 from './components/Our2';
+import Contact from './components/Contact';
+
+
 function App() {
 
   const [bg, setBg] = useState("black");
@@ -25,6 +28,7 @@ function App() {
       settextcolor("black");
       setitext("black");
     }
+
   };
 
   useEffect(() => {
@@ -32,38 +36,54 @@ function App() {
   });
   return (
     <>
-    <section className='h-screen w-full relative  bg-gradient-to-r from-black to-gray-600'>
-    <img src={img} className='h-full w-full object-cover absolute mix-blend-overlay' />
+     <section className='h-screen relative bg-gradient-to-t from-slate-900 ' id='Home'>
+    <img src={img} className='h-full w-full object-cover absolute mix-blend-overlay ' />
     <Navbar textcolor={textcolor} scroll={scroll}/>
-    <h1 className='md:text-9xl text-8xl text-center bold mt-32 font-mono text-white'>CLASS-1</h1>
+    <h1 className='md:text-9xl text-8xl text-center bold mt-32 font-mono text-white  '>CLASS-1</h1>
     <h1 className='text-5xl text-center bold mt-4 font-mono text-white'>UNISEX SALON</h1>
+    <h1 className='text-xl text-center bold mt-4 font-mono text-white'>UNISEX SALON</h1>
     </section>
 
-    <section>
+    <section id='About'>
 
     <About/>
 
     </section>
 
-    <section>
+   
+    
 
+    <section id='Service'>
+      <Our2/>
+    </section>
+
+
+
+
+
+
+    <section id='gallery'>
       <Gallery/>
+    </section>
 
+    <section id='gallery'>
+      <Contact/>
     </section>
 
 
-    <section>
-      <Features/>
-    </section>
+ 
+
+
     <section>
       <Footer/>
     </section>
 
+    
 
 
-    <section>
+    {/* <section>
       <Cont/>
-    </section>
+    </section> */}
     </>
   );
 }
