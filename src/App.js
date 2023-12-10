@@ -2,7 +2,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import React, { useState, useEffect } from "react";
-import img from './image.jpg'
+// import img from './image.jpg'
+// import img from './image.jpg'
+import img from './2.webp'
 import About from './components/About';
 import Gallery from './components/Gallery';
 
@@ -40,10 +42,10 @@ function App() {
   return (
     <>
      <section className='h-screen relative bg-gradient-to-r from-black to-slate-800  ' id='Home'>
-    <img src={img} className='h-full w-full object-cover absolute mix-blend-multiply ' />
+    <img src={img} className='h-full w-full object-cover absolute mix-blend-soft-light ' />
     <Navbar textcolor={textcolor} scroll={scroll}/>
-    <h1 className='md:text-9xl text-8xl text-center bold mt-32 font-sans  text-white '><i><b className='text-red-500'>CLASS-1</b></i></h1>
-    <h1 className='text-5xl text-center bold mt-4 font-mono text-white'>UNISEX SALON</h1>
+    <h1 className='md:text-9xl text-8xl text-center bold mt-32 font-sans  text-white '><i><b className='text-red-500 text-6xl md:text-9xl '>CLASS-1</b></i></h1>
+    <h1 className='text-2xl md:text-5xl text-center bold mt-4 font-mono text-white'>UNISEX SALON</h1>
 
 
 

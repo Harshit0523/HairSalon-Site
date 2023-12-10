@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple website</title>
+    <style>
+        body {
+            background-color: rgb(128, 122, 99);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        :root {
+            --navtextcolor: rgb(6, 4, 4);
+            --navbgcolor: rgb(228, 228, 204);
+            --navtextcolor2: rgb(255, 0, 0);
+            --textdec-color: crimson;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            padding: 30px;
+            background-color: var(--navbgcolor);
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            color: var(--navtextcolor);
+            background-color: var(--navbgcolor);
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+
+        ul li:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--textdec-color);
+            color: var(--navtextcolor2);
+        }
+
+        div.background {
+            margin: auto;
+            width: 85vw;
+            border: 3px solid;
+            padding: 30px;
+            background-color: blueviolet;
+        }
+
+        .background img {
+            max-width: 100%;
+            margin-left: 20px;
+        }
+
+        header div {
+            display: flex;
+            margin: 25px;
+            text-shadow: 2px black;
+        }
+
+        .circle img {
+            position: fixed;
+            top: 70vh;
+            left: 86vw;
+            max-width: 190px;
+            z-index: 2;
+        }
+
+        .square {
+            max-width: 100%;
+        }
+
+        .content {
+            margin-top: 110px;
+            margin-bottom: 100px;
+            margin: auto;
+            width: 70vw;
+            border: 3px solid;
+            padding: 25px;
+            border-radius: 30px;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            background-color: var(--textdec-color);
+        }
+
+        footer {
+            padding: px;
+        }
+
+        .foot {
+            margin: 0;
+            padding: 0;
+            background-color: var(--navbgcolor);
+        }
+
+        div > h3 {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 70px;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Channel</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div class="background">
+            <div class="square"><img src="https://bestwallpapers.in/wp-content/uploads/2018/05/boat-purple-blue-sky-clouds-sunset-ocean-4k-wallpaper-1280x1280.jpg" width="600px" alt=""></div>
+            <div class="square"><img src="https://www.wallpaperup.com/uploads/wallpapers/2015/04/14/660824/ce8a9c752216e28cf1bcb631cb1549c1.jpg" width="600px" alt=""></div>
+            <div class="circle">
+                <img src="image-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumenda natus. Dicta vel quo perspiciatis quod possimus doloribus veritatis repudiandae, repellat inventore.</p>
+    </div>
+    <footer>
+        <div class="foot">
+            <h3>&COPY; 2023 Sigma Web Dev Expres All rights reserved</h3>
+        </div>
+    </footer>
+</body>
+</html>
