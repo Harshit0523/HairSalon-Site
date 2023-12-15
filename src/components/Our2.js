@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
+import os1 from "../os1.jpg"
+import os2 from "../os2.jpg"
+import os3 from "../os3.jpg"
+import os4 from "../os4.jpg"
+import os5 from "../os5.jpg"
 
 export default function Our2() {
   useEffect(() => {
@@ -39,9 +44,7 @@ export default function Our2() {
               Our Services
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+            Discover a world of personalized beauty at our salon, where expertise meets individuality. From precision cuts to transformative colors and indulgent treatments, our services are designed to reveal your unique style, fostering confidence in every strand.
             </p>
             <div class="flex mt-6 justify-center">
               <div class="w-16 h-1 rounded-full bg-amber-500 inline-flex"></div>
@@ -56,58 +59,79 @@ export default function Our2() {
                 
                 <div className="relative bg-gradient-to-t from-black to-slate-500">
                   <img
-                    src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
+                    src={os1}
                     className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
                   />
 
-                    <h1 className="text-4xl mt-40 text-center bold text-amber-500">Hair Cut</h1>     
-               
-                </div>
-
-
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
-                  <img
-                    src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
-                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
-                  />
-
-                    <h1 className="text-4xl mt-40 text-center bold text-amber-500">Hair Cut</h1>     
-               
-                </div>
-
-
-
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
-                  <img
-                    src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
-                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
-                  />
-
-                    <h1 className="text-4xl mt-40 text-center bold text-amber-500">Hair Cut</h1>     
-               
-                </div>
-
-
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
-                  <img
-                    src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
-                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
-                  />
-
-                    <h1 className="text-4xl mt-40 text-center bold text-amber-500">Hair Cut</h1>     
+                    <h1 className="text-4xl mt-40 text-center bold text-white ">Hair Wash</h1>     
                
                 </div>
 
                 
                 <div className="relative bg-gradient-to-t from-black to-slate-500">
                   <img
-                    src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
+                    src={os2}
                     className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
                   />
 
-                    <h1 className="text-4xl mt-40 text-center bold text-amber-500">Hair Cut</h1>     
+                    <h1 className="text-4xl mt-40 text-center  text-white bold">Hair Cut</h1>     
                
                 </div>
+
+
+              
+
+
+                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                  <img
+                    src={os3}
+                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
+                  />
+
+                    <h1 className="text-4xl mt-40 text-center  text-white bold">Hair Color</h1>     
+               
+                </div>
+
+
+              
+
+
+                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                  <img
+                    src={os4}
+                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
+                  />
+
+                    <h1 className="text-4xl mt-40 text-center bold text-white bold">Mens Grooming</h1>     
+               
+                </div>
+
+
+              
+
+
+                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                  <img
+                    src={os5}
+                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
+                  />
+
+                    <h1 className="text-4xl mt-40 text-center bold text-white bold">Hair Straigt</h1>     
+               
+                </div>
+
+
+              
+
+
+
+              
+
+
+               
+
+                
+              
 
 
 

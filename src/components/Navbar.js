@@ -120,8 +120,10 @@ const Navbar = () => {
                 >GALLERY</Link>
             </a>
           </nav>
-          <button class="inline-flex items-center hidden md:block bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Contact
+          <button class=" items-center hidden md:block border-0 py-1 bg-green-600 px-3 focus:outline-none hover:bg-gray-200 rounded text-black text-base mt-4 md:mt-0">
+          <a href="https://wa.me/9424741225">
+            Contact Us
+            </a>
           </button>
         </div>
       </header>

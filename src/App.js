@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import React, { useState, useEffect } from "react";
+// import Link from 'next/Link'
 // import img from './image.jpg'
 // import img from './image.jpg'
 import img from './2.webp'
@@ -49,11 +50,11 @@ function App() {
 
 
 
-    <div className='text-center  justify-center text-white bold flex py-6 text-2xl'>
+    <div className='text-center  justify-center text-white bold flex py-6 text-2xl  '>
 
-        <div className='m-1'> <AiOutlineInstagram/>  </div>
-        <div  className='m-1'> <BiLogoFacebook/> </div>
-        <div  className='m-1'> <ImWhatsapp/></div>
+        <div className='m-1 text-pink-600 cursor-pointer '> <a href="https://wa.me/9424741225"> <AiOutlineInstagram className='cursor-pointer'/> </a> </div>
+        <div  className='m-1 text-blue-600 cursor-pointer'> <BiLogoFacebook className='cursor-pointer'/> </div>
+        <div  className='m-1 text-green-500 cursor-pointer'> <ImWhatsapp className='cursor-pointer'/></div>
         
            
 
