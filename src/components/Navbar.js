@@ -3,6 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FaLessThan } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import logo from '../images/clogo.png'
 
 const Navbar = () => {
   const toggleCart = () => {
@@ -28,12 +29,14 @@ const Navbar = () => {
   });
   return (
     <>
-      <header class="text-gray-600 body-font sticky">
+      <header class="text-gray-600 body-font sticky z-50">
         <div class="container mx-auto flex flex-wrap p-5 justify-between flex-row items-center sticky">
           <div className="mid  text-2xl text-white md:hidden ">
             <AiOutlineMenu onClick={toggleCart} />
           </div>
-          <div class="ml-3 text-xl text-bold text-white">CLASS-ONE</div>
+          <div class="text-bold text-white">
+            <img src={logo} className="h-28 w-28"/>
+          </div>
 
           <div
             ref={ref}
@@ -46,38 +49,62 @@ const Navbar = () => {
               <FaLessThan />
             </span>
 
+
+    `
+
             <div className="text-white flex flex-col items-center h-80 mt-32 justify-between">
               <div a className="text-4xl">
                 {" "}
-                <Link
+                <Link onClick={toggleCart}
                   activeClass="active"
                   to="section1"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
-                ></Link>{" "}
-                HOME{" "}
+                >HOME</Link>
+                
               </div>
               <div className="text-4xl">
                 {" "}
                 <Link
+                onClick={toggleCart}
                   activeClass="active"
                   to="About"
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={15000}
                 >ABOUT</Link>
                 
               </div>
               <div className="text-4xl">
                 {" "}
-                <a href="#Service">SERVICE</a>
+                <Link
+                onClick={toggleCart}
+                  activeClass="active"
+                  to="SERVICES"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={15000}
+                >SERVICES</Link>
+                
               </div>
               <div className="text-4xl">
-                <a href="#gallery">GALLERY</a>
+                {" "}
+                <Link
+                onClick={toggleCart}
+                  activeClass="active"
+                  to="GALLERY"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={15000}
+                >GALLERY</Link>
+                
               </div>
+              
             </div>
           </div>
 

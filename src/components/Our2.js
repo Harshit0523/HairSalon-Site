@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
-import os1 from "../os1.jpg"
-import os2 from "../os2.jpg"
-import os3 from "../os3.jpg"
-import os4 from "../os4.jpg"
-import os5 from "../os5.jpg"
+import os1 from "../images/img1.jpg"
+import os2 from "../images/img1.jpg"
+import os3 from "../images/img1.jpg"
+import os4 from "../images/img1.jpg"
+import os5 from "../images/img1.jpg"
+import vid from '../images/vid.mp4'
+
+
 
 export default function Our2() {
   useEffect(() => {
@@ -40,7 +43,7 @@ export default function Our2() {
       <section class="text-white bg-black body-font ">
         <div class="container px-5 py-20 mx-auto">
           <div class="text-center mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4 -mt-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4 -mt-20 animate-fade-up animate-once animate-duration-1000 animate-ease-out animate-alternate animate-fill-both">
               Our Services
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
@@ -55,20 +58,17 @@ export default function Our2() {
           <div className="glide-04 relative w-full">
             {/*    <!-- Slides --> */}
             <div className="overflow-hidden" data-glide-el="track">
-              <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+              <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex  overflow-hidden p-0 w-32 ">
                 
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
-                  <img
-                    src={os1}
-                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
-                  />
+                <div className="relative bg-gradient-to-t from-black to-slate-500 h-96 w-32 ">
+                  <video src={vid} autoplay loop />
 
-                    <h1 className="text-4xl mt-40 text-center bold text-white ">Hair Wash</h1>     
+                    <h1 className="text-6xl mt-80 text-center bold text-white font-serif ">Hair Wash</h1>     
                
                 </div>
 
                 
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                {/* <div className="relative bg-gradient-to-t from-black to-slate-500">
                   <img
                     src={os2}
                     className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
@@ -90,13 +90,13 @@ export default function Our2() {
 
                     <h1 className="text-4xl mt-40 text-center  text-white bold">Hair Color</h1>     
                
-                </div>
+                </div> */}
 
 
               
 
 
-                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                {/* <div className="relative bg-gradient-to-t from-black to-slate-500">
                   <img
                     src={os4}
                     className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
@@ -119,6 +119,30 @@ export default function Our2() {
                     <h1 className="text-4xl mt-40 text-center bold text-white bold">Hair Straigt</h1>     
                
                 </div>
+
+
+
+                <div className="relative bg-gradient-to-t from-black to-slate-500">
+                  <img
+                    src={os5}
+                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
+                  />
+
+                    <h1 className="text-4xl mt-40 text-center bold text-white bold">Hair Straigt</h1>     
+               
+                </div> */}
+
+
+
+                {/* <div className="relative bg-gradient-to-t from-black to-slate-500">
+                  <img
+                    src={os5}
+                    className="m-auto max-h-full w-full max-w-full  object-cover absolute mix-blend-overlay"
+                  />
+
+                    <h1 className="text-4xl mt-40 text-center bold text-white bold">Hair Straigt</h1>     
+               
+                </div> */}
 
 
               
